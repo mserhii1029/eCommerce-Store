@@ -1,0 +1,51 @@
+header {
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	height: 3em;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	background-color: hsl(0, 0%, 4%);
+	z-index: 15;
+	border-bottom: 0.5px hsl(0, 0%, 9%) solid;
+}
+
+nav {
+	margin-right: 0.5em;
+}
+
+nav a {
+	text-decoration: none;
+	padding: 0 1em;
+}
+
+.logo {
+	opacity: 0;
+	animation: navDown 1s 2.3s forwards;
+}
+
+.first-btn {
+	opacity: 0;
+	animation: navDown 1s 2.3s forwards;
+}
+.second-btn {
+	opacity: 0;
+	animation: navDown 1s 2.45s forwards;
+}
+.third-btn {
+	opacity: 0;
+	animation: navDown 1s 2.55s forwards;
+}
+
+@keyframes navDown {
+	0% {
+		transform: translateY(-10px);
+	}
+	100% {
+		opacity: 1;
+	}
+}
